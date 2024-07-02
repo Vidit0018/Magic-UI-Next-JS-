@@ -1,0 +1,1 @@
+export {default as htmlImage }from './html.svg' 
