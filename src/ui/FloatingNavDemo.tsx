@@ -2,6 +2,7 @@
 import React from "react";
 import { FloatingNav } from "@/components/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import Navbar from "./Navbar";
 const FloatingNavDemo = () => {
   const navItems = [
     {
@@ -31,8 +32,9 @@ const FloatingNavDemo = () => {
   ];
 
   return (
-    <div className="relative w-full">
-      <FloatingNav navItems={navItems} className="custom-floating-nav-class" />
+    <div className="relative sm:w-full w-[375px]">
+      <FloatingNav navItems={navItems} className="custom-floating-nav-class hidden sm:flex" />
+      <Navbar/>
     </div>
   );
 };
